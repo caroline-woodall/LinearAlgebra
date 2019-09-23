@@ -4,10 +4,10 @@
 
 class Solver{
 public:
-    Matrix mat;
-    Solver(Matrix x){
-        mat = x;
-    }
+    Solver(){}
+    Matrix* getIdentityMatrix(Matrix *mat);
+    Matrix* multiplyMatrices(Matrix *mat1, Matrix *mat2);
+    Matrix* addMatrices(Matrix *mat1, Matrix *mat2);
 };
 
 #endif /* Solver_h */
